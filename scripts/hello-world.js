@@ -1,0 +1,1 @@
+document.writeln("Hello World! this is my first commitment for learn Javascript, please support me!");

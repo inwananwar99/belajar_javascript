@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika - Non Boolean</title>
+</head>
+<body>
+    <script>
+        //OR
+        console.info('' || []);
+        console.info('Inwan' || []);
+        console.info('0' || 0);
+
+        //AND
+        console.info('0' && 0);
+        console.info('[]' && []);
+
+        //KASUS OR
+        const person = {
+            hobi : "main bola",
+            profesi : "tukang ngoding"
+        }
+
+        console.info(person.hobi || person.umur);
+        console.info(person.umur || person.profesi);
+        console.info(person.hobi || person.profesi);
+        //KASUS AND
+        console.info(person.hobi && person.umur);
+        console.info(person.umur && person.profesi);
+        console.info(person.hobi && person.profesi);
+    </script>
+</body>
+</html>

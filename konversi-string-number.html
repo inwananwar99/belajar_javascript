@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi String Number</title>
+</head>
+<body>
+    <script>
+        const value1 = parseInt("1");
+        const value2 = 1;
+        const sum = value1 + value2;
+        const parse = "1.5";
+        const flo = 1.99;
+        document.writeln(`<p>${sum}</p>`);
+        document.writeln(`<p>${parseFloat(flo)}</p>`);
+        document.writeln(`<p>${Number(parse)}</p>`);
+        document.writeln(`<p>${parse.toString()}</p>`);
+        document.writeln(`<p>${parseInt("INWAN99")}</p>`); //Not a Number (NaN)
+        document.writeln(`<p>${isNaN(100)}</p>`);
+        document.writeln(`<p>${isNaN("Inwan")}</p>`);
+        document.writeln(`<p>${isNaN(NaN)}</p>`);
+    </script>
+</body>
+</html>
