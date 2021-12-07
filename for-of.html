@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Of</title>
+</head>
+<body>
+    <script>
+        //non iterable
+        const data = {
+            name : "Inwan",
+            hobby : "coding",
+            occupation : "Programmer"
+        }
+        //iterable
+        let data1 = ['Inwan','Anwar','Solihudin'];
+        for (const properti of data1){
+            document.write(`<p>${properti} - ${data1[properti]}</p>`)
+        }
+        let data2 = 'inwan anwar solihudin';
+            for (const properti of data2) {
+                document.write(`<p>${properti} - ${data2[properti]}</p>`)
+            }
+        let i =1;
+        do {
+            document.writeln('harus sering dicobain, jangan dihafal');
+            i++;
+        } while (i <= 10);
+    </script>
+</body>
+</html>
