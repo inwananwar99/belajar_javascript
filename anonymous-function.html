@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Function</title>
+</head>
+<body>
+    <script>
+        let say = function(){
+            alert('Ini adalah anonymous function');
+        }
+        say();
+        //anonymous function di parameter
+        function call(callback){
+            callback('Inwan');
+        }
+        call(function (name){
+            alert('selamat datang '+name+' di anonymous function');
+        });
+    </script>
+</body>
+</html>
