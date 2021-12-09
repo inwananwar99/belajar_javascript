@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+        //global scope
+        let nama1 = 'Inwan';
+        let nama2 = 'Entahlah';
+        function namaku(){
+            alert('function namaku dengan nilai '+nama1)
+        }
+        function namamu(){
+            alert('function namamu dengan nilai '+nama2)
+        }
+
+        namaku();
+        namamu();
+        //local scope
+        function local1(){
+            let var1 = 'gabisa akses yaa';
+            alert('function local 1: gabakal bisa akses local1 gua lo =>'+var1);
+        }
+        function local2(){
+            let var2 = 'gabisa akses yaa';
+            alert('function local 2: gabakal bisa akses local2 gua lo =>'+var2);
+        }
+
+        local1();
+        // alert(var1); error
+        
+        //nested function scope
+        function kijang1(){
+            //global scope
+            let call = "Kijang 1 hadir";
+            function kijangcurut(){
+                alert(call);
+            }
+            kijangcurut();
+        }
+
+        kijang1();
+
+    </script>
+</body>
+</html>
