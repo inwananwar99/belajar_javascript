@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursive</title>
+</head>
+<body>
+    <script>
+        //program notasi faktorial
+        function factorial(value){
+            let result = 1;
+            for (let i = 1; i <= value; i++) {
+                result *= i;
+            }
+            return result;
+        }
+        let val = prompt();
+        alert(factorial(val));
+
+        //notasi faktorial dengan recursive
+        function recursiveFaktorial(value){
+            if(value === 1){
+                return 1;
+            }else{
+                return value * recursiveFaktorial(value - 1);
+            }
+        }
+        let val1 = prompt();
+        alert(recursiveFaktorial(val1));
+    </script>
+</body>
+</html>
