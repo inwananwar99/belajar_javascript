@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Kalkulator Sederhana</title>
+</head>
+<body>
+    <script>
+        alert('Kalkulator Javascript nih!!!, lanjut ya');
+        let var1 = prompt('Masukan angka pertama');
+        let operasi = prompt('Operasi');
+        let var2 = prompt('Masukan angka kedua');
+        if(operasi == 'Penjumlahan'){
+            let tambah = var1 + var2;
+            alert('Hasilnya adalah '+tambah);
+        } else if(operasi == 'Pengurangan'){
+            let kurang = var1 - var2;
+            alert('Hasilnya adalah '+kurang);
+        }else if(operasi == 'Perkalian'){
+            let kali = var1 * var2;
+            alert('Hasilnya adalah '+kali);
+        }else if(operasi == 'Pembagian'){
+            let bagi = var1 / var2;
+            alert('Hasilnya adalah '+bagi);
+        }
+    </script>
+</body>
+</html>
