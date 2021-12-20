@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getter dan Setter</title>
+</head>
+<body>
+    <script>
+
+        //object diisi dengan method getter
+        let nama_dia = {
+            satu:'Shofa',
+            dua:'Talitha',
+            tiga:'Seni',
+            get panggil(){
+                return alert('Namanya '+this.satu);
+            },
+            set panggil_lagi(nilai){
+                let array = nilai.split("|");
+                this.satu = array[0];
+                this.satu = array[1];
+                this.satu = array[2];
+            }
+        }
+        alert(nama_dia.panggil_lagi = "Shofa Nurduha Urwatul Wutsqo");
+    </script>
+</body>
+</html>
