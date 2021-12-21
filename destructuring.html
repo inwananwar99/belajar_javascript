@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        //Destructuring array (membongkar data di dalam array)
+        let namaku = ["Inwan","anwar","solihudin"];
+        let [namaAwal, namaTengah, namaAkhir] = namaku;
+        alert(namaAwal);
+        alert(namaTengah);
+        alert(namaAkhir);
+        //destructuring di object 
+         let nama_dia = {
+                satu: 'Shofa',
+                dua: 'Talitha',
+                tiga: 'Seni'
+            }
+        let {satu,dua,tiga} = nama_dia;
+        alert(satu);
+        alert(dua);
+        alert(tiga);
+        //destructuring di nested object
+        let mibois={
+            nama:{
+            nama1 : 'Inwan',
+            nama2 : 'Andri',
+            nama3 : 'Anggi'
+            }
+        }
+        let {nama:{nama1,nama2,nama3}}=mibois;
+        alert(nama1);
+        //destructuring parameter berbentuk objek di function
+        let profesi ={
+            p1:'Programmer',
+            p2:'System Analyst',
+            p3:'Quality Assurance'
+        }
+        function pekerjaan({p1,p2,p3}){
+            alert(p1);
+            alert(p2);
+            alert(p3);
+        }
+
+        pekerjaan(profesi);
+        //destructuring parameter berbentuk array di function
+            function ngoding([p1, p2, p3]) {
+                alert(p1);
+                alert(p2);
+                alert(p3);
+            }
+        ngoding(['php','javascript','python']);
+    </script>
+</body>
+</html>
