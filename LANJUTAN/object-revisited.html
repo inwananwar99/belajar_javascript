@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.1 Object Revisited</title>
+</head>
+<body>
+    <script>
+        //object literal
+        // let pegawai = {
+        //         nama: 'inwan anwar solihudin',
+        //         jabatan: 'Software Engineer',
+        //         project: function (jml) {
+        //             alert(`Saya ${this.nama} Jumlah project yang telah saya kerjakan ada ${jml}`);
+        //         }
+        //     }
+        //     pegawai.project(5);
+
+        //object in function declaration
+        // function pegawai(nama){
+        //     let profesi ={};
+        //     profesi.nama = nama;
+        //     profesi.project = function(jml){
+        //         alert(`Saya ${this.nama} Jumlah project yang telah saya kerjakan ada ${jml}`);
+        //     }
+        //     return profesi.project(5);
+        // }
+        // let inwan = pegawai('inwan');
+        // let andri = pegawai('andri');
+
+        //constructor function 
+        function pegawai(nama) {
+                this.nama = nama;
+                this.project = function (jml) {
+                    alert(`Saya ${this.nama} Jumlah project yang telah saya kerjakan ada ${jml}`);
+                }
+
+            }
+            let inwan = new pegawai('inwan');
+            inwan.project(5);
+            let andri = new pegawai('andri');
+            andri.project(5);
+
+    </script>
+</body>
+</html>
